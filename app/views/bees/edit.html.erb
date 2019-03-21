@@ -1,0 +1,6 @@
+<h1>Edit Bee information</h1>
+<%= form_for :bee do |f| %>
+Name: <%= f.text_field :name %>
+Queen: <%= f.check_box :name %>
+Select Hive <%= f.collection_select :hive_id, Hive.all, :id, :name%>
+<% end %>

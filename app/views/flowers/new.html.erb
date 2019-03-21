@@ -1,0 +1,9 @@
+<h1> Create a new Flower </h1>
+
+
+<%= form_for :flower do |f| %>
+<p>Name: <%= f.text_field :name %></p>
+<p>Pollen capacity <%= f.number_field :pollen_capacity %></p>
+<p><%= f.collection_check_boxes :bee_ids, Bee.all, :id, :name %></p>
+<%= f.submit %>
+<% end %>

@@ -1,0 +1,7 @@
+<h1>Flowers Index</h1>
+<%= link_to "Create a new flower", new_flower_path %>
+<ul>
+  <% @flowers.each do |flower| %>
+  <li><%= link_to flower.name, flower_path(flower)%></li>
+  <%end %>
+</ul>

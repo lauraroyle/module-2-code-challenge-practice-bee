@@ -20,3 +20,5 @@ Bee.create(name:"Abdul", queen: true, hive_id: 1)
 Bee.create(name:"Lisa", queen: true, hive_id: 2)
 Bee.create(name:"Tom", queen: true, hive_id: 2)
 Bee.create(name:"Tim", queen: true, hive_id: 1)
+
+Flight.create(bee_id: 1, flower_id: 2)
